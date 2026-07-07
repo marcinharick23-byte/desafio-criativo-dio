@@ -48,3 +48,9 @@ Para transformar essa proposta em uma aplicação web interativa e atrativa, sug
 * **Design Limpo e Responsivo:** Perfeito tanto em dispositivos móveis quanto em desktops.
 * **Gamificação:** Conquista de "badges" (conquistas) ao manter o orçamento no azul ou atingir metas de economia.
 * **Modo Escuro (Dark Mode):** Para maior conforto visual.
+
+---
+
+## 📸 Preview da Aplicação
+
+![Educador Financeiro Inteligente](public/images/educador-financeiro-inteligente.png)
