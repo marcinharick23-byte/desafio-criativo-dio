@@ -196,8 +196,11 @@ Durante o desenvolvimento deste projeto foram aplicados conhecimentos em:
 
 ## 📸 Preview da Aplicação
 
-![Educador Financeiro Inteligente](public/images/educador-financeiro-inteligente.png)
+![Dashboard Educador Financeiro Inteligente](public/images/educador-financeiro-inteligente.png)
 
 ---
+
+🔗 Repositório:
+https://github.com/marcinharick23-byte/desafio-criativo-dio
 
 Desenvolvido por **Marcia Cristina dos Santos** 🚀
