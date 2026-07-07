@@ -1,10 +1,105 @@
-# Desafio Criativo - Educador Financeiro Inteligente
+# 💰 Educador Financeiro Inteligente
 
-Este repositório contém a proposta de desenvolvimento de um **Educador Financeiro Inteligente**, um assistente virtual e sistema de controle projetado para ajudar usuários a organizarem suas finanças pessoais, saírem do endividamento e desenvolverem hábitos financeiros saudáveis.
+Uma aplicação frontend inteligente criada para auxiliar usuários no controle financeiro pessoal, combinando organização, educação financeira e uma experiência simples, intuitiva e responsiva.
+
+O projeto transforma uma proposta de educação financeira digital em uma aplicação web interativa, permitindo acompanhar receitas, despesas, metas financeiras e desenvolver hábitos mais saudáveis de organização do dinheiro.
 
 ---
 
-## 🎯 Prompt (Desafio Original)
+## 🎯 Sobre o Projeto
+
+O **Educador Financeiro Inteligente** é um dashboard financeiro desenvolvido para ajudar usuários a:
+
+- Organizar receitas e despesas;
+- Visualizar sua situação financeira;
+- Criar metas de economia;
+- Acompanhar gastos por categoria;
+- Desenvolver melhores hábitos financeiros através de uma experiência simples e educativa.
+
+A aplicação foi desenvolvida como desafio criativo utilizando conceitos modernos de desenvolvimento Front-end com React e TypeScript.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide React
+- HTML5
+- CSS3
+
+---
+
+## ✨ Funcionalidades Implementadas
+
+✅ Dashboard financeiro interativo
+
+✅ Visualização de:
+- Saldo atual;
+- Receitas;
+- Despesas.
+
+✅ Gráfico de gastos por categoria
+
+✅ Controle de metas financeiras com barra de progresso
+
+✅ Lista de transações financeiras
+
+✅ Cadastro e remoção de lançamentos
+
+✅ Persistência de dados utilizando LocalStorage
+
+✅ Componentes reutilizáveis em React
+
+✅ Layout responsivo para diferentes dispositivos
+
+---
+
+## 🖥️ Interface da Aplicação
+
+A aplicação apresenta um painel principal contendo:
+
+- Resumo financeiro;
+- Indicadores de receitas e despesas;
+- Gráfico visual de distribuição dos gastos;
+- Metas financeiras;
+- Área de acompanhamento de transações.
+
+---
+
+## 🧩 Componentização React
+
+O projeto foi organizado utilizando componentes reutilizáveis:
+
+```
+src/
+├── components/
+│   ├── Header.tsx
+│   ├── FinancialCard.tsx
+│   ├── ProgressBar.tsx
+│   ├── TransactionList.tsx
+│   └── CategoryChart.tsx
+│
+├── hooks/
+│   └── useFinance.ts
+│
+├── pages/
+│   └── Dashboard.tsx
+│
+├── services/
+│   └── mockData.ts
+│
+├── types/
+│   └── index.ts
+│
+└── assets/
+```
+
+---
+
+# 🎯 Prompt do Desafio Original
 
 Atue como um especialista em educação financeira digital.
 
@@ -12,45 +107,97 @@ Crie a proposta de um **Educador Financeiro Inteligente** para pessoas que desej
 
 O sistema deve ajudar o usuário a controlar receitas e despesas, planejar o orçamento mensal, criar metas de economia e aprender conceitos básicos de educação financeira.
 
-### Funcionalidades Principais
-* **Controle e Categorização:** Registro de receitas e despesas com relatórios visuais e intuitivos.
-* **Planejamento Financeiro:** Definição de metas de economia (ex: reserva de emergência) e simulação de investimentos básicos (renda fixa).
-* **Recomendações Personalizadas:** Lembretes de pagamentos, alertas de desvio de orçamento e dicas diárias/semanais para melhorar hábitos de consumo.
+---
 
-### Tom de Voz e Comunicação
-* **Didática e Acolhedora:** Comunicação clara, motivadora e sem termos excessivamente técnicos.
-* **Prática:** Respostas estruturadas em listas organizadas, exemplos reais, tabelas simples e planos de ação passo a passo.
-* **Segura:** Foco em educação e organização, evitando qualquer recomendação de investimentos ou decisões de alto risco.
+## Funcionalidades Propostas
+
+### Controle e Categorização
+
+Registro de receitas e despesas com relatórios visuais e intuitivos.
+
+### Planejamento Financeiro
+
+Definição de metas de economia, como reserva de emergência, e simulação de investimentos básicos.
+
+### Recomendações Personalizadas
+
+Lembretes de pagamentos, alertas de desvio de orçamento e dicas para melhorar hábitos de consumo.
 
 ---
 
-## 💡 Sugestões para Projeto Frontend Interativo (React)
+## 💡 Experiência do Usuário (UX)
 
-Para transformar essa proposta em uma aplicação web interativa e atrativa, sugere-se a seguinte estrutura:
+A aplicação foi pensada seguindo princípios de:
 
-### 📱 Telas da Aplicação
-1. **Dashboard Principal:** Visão geral do saldo atual, gráfico de receitas vs. despesas do mês e progresso das metas.
-2. **Lançamentos / Extrato:** Área para adicionar transações com categorias (alimentação, moradia, lazer, etc.) e filtros inteligentes.
-3. **Simulador de Investimentos & Metas:** Ferramenta interativa para calcular o tempo necessário para atingir objetivos (ex: comprar um notebook, montar reserva) com base em depósitos mensais.
-4. **Trilha de Aprendizado (Educação):** Pequenas pílulas de conteúdo (cards interativos) sobre conceitos como juros compostos, indicativos e regras básicas.
+- Design limpo e responsivo;
+- Interface intuitiva;
+- Comunicação simples e educativa;
+- Organização visual das informações;
+- Facilidade de uso em dispositivos móveis e desktops.
 
-### 🧩 Componentes React Sugeridos
-* `<TransactionForm />`: Formulário controlado para entrada rápida de receitas/despesas com autocomplete de categorias.
-* `<ProgressBar />`: Para exibição visual do progresso de cada meta financeira.
-* `<InvestmentSimulator />`: Inputs deslizantes (sliders) para simular o crescimento de um valor investido ao longo do tempo.
-* `<NotificationBadge />`: Alertas de vencimento de contas e dicas rápidas do assistente inteligente.
+---
 
-### 📊 Recursos de Visualização de Dados
-* **Gráfico de Pizza/Rosca:** Distribuição percentual das despesas por categoria.
-* **Gráfico de Linha/Área:** Evolução do patrimônio líquido e progresso de economia ao longo dos meses.
+## 🔮 Possíveis Melhorias Futuras
 
-### ✨ Experiência do Usuário (UX)
-* **Design Limpo e Responsivo:** Perfeito tanto em dispositivos móveis quanto em desktops.
-* **Gamificação:** Conquista de "badges" (conquistas) ao manter o orçamento no azul ou atingir metas de economia.
-* **Modo Escuro (Dark Mode):** Para maior conforto visual.
+Algumas funcionalidades que podem ser adicionadas futuramente:
+
+- Sistema de autenticação de usuários;
+- Integração com banco de dados;
+- Inteligência Artificial para recomendações personalizadas;
+- Simulador de investimentos;
+- Trilha de educação financeira;
+- Sistema de conquistas e gamificação;
+- Modo Dark.
+
+---
+
+## ▶️ Como Executar o Projeto
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/marcinharick23-byte/desafio-criativo-dio.git
+```
+
+Acesse a pasta:
+
+```bash
+cd desafio-criativo-dio
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o projeto:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🧠 Aprendizados
+
+Durante o desenvolvimento deste projeto foram aplicados conhecimentos em:
+
+- Componentização com React;
+- Criação de componentes funcionais;
+- Tipagem utilizando TypeScript;
+- Hooks personalizados;
+- Organização de arquitetura Front-end;
+- Desenvolvimento de interfaces responsivas;
+- Estilização moderna com Tailwind CSS;
+- Gerenciamento de estado e persistência de dados.
 
 ---
 
 ## 📸 Preview da Aplicação
 
 ![Educador Financeiro Inteligente](public/images/educador-financeiro-inteligente.png)
+
+---
+
+Desenvolvido por **Marcia Cristina dos Santos** 🚀
